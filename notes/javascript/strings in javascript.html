@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript | Strings and String Methods</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi, quaerat corrupti quas, illum nobis tempore sequi cumque laboriosam magni expedita earum? Similique corrupti nam magni reprehenderit quia vero, reiciendis eius officiis doloremque ipsa?</p>
+    </div>
+    <script>
+
+    // STRINGS: 1.set of characters is called is called strings.  2. identified using double or single quotes.
+    
+    var name = 'Rohit';
+    var dream = 'IAS'
+    console.log(name); 
+    console.log(dream); 
+
+    var temp = `${name} is a nice person and his dream is to  become an ${dream}`; // `${varaiable_name}` takes variable_value from specified variable_name .
+    console.log(temp);
+
+    //we can also add two strings with the help of 1.addition operator
+    console.log(name + dream);
+    // 2.concat string: string_name.concat('string to be added') .
+    var newString = str.concat('concated string');
+    console.log(newString);
+
+    //length of the string can be finded in this way.
+    console.log(name.length);
+    var len = name.length;  
+    console.log(`Length of name is ${len}`);
+
+    // All the escape sequene characters are same as that in the c language.
+    console.log("Hello \\nworld\nHarry\tand");
+
+    //strings can also be constructed using string construction method by using "String" as a keyword but don't use this for now.
+    var y = new String("this");
+    console.log(y);
+
+    //Targeting element in javascript by id
+    document.getElementById('content').innerHTML = '<h3>this is an h3 heading</h3>' // LEAVE THIS FOR NOW. 
+    
+    </script>
+</body>
+</html>

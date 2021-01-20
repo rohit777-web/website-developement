@@ -1,0 +1,20 @@
+//- Pug supports template inheritance. Template inheritance works via the block and extends keywords.
+doctype html
+html
+  head
+    title Dance Website
+    block scripts
+    block style
+        
+  body
+    nav#navbar
+      ul
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") Services]
+        li #[a(href="/") Contact Us]
+        li #[a(href="/") Class info]
+    block content
+      hr
+    footer#footer
+      h3  © 2020 Rohit Sharma | All Rights Reserved

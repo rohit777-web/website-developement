@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Size units</title>
+    <style>
+        html {
+            font-size: 25px;
+        }
+
+        .container {
+            width: 400px;
+            /* height: 344px; */
+            height: 100vh;
+            /* vh refers to view port height and 100vh justify that it will take the full view port height*/
+            width: 100vw;
+            /* vw refers to view port width and 100vw justify that it will take the full view port width*/
+            font-size: 10px;
+            border: 2px solid red;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #first {
+            font-size: 3em;
+            /*3em means its font size is 3 times its parent size(here container) or em Font-sizes are inherited relative to the parent element. 10em means ten times of the parent element.*/
+            padding: 3em;
+            /*here em works according to above declaration of em i.e, three times of foent size*/
+
+        }
+
+        #second {
+            /* font-size: 3rem;   /* rem sets units according to the root unit in general html is the root unit(here r stands for root)*/
+            padding: 3rem;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+</body>
+
+</html>

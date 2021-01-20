@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <div class="container">
+        This is arrow functions tutorial.
+    </div>
+    <script>
+    // Arrow function - An arrow function expression is a syntactically compact alternative(shortcut) to a regular function expression .
+    // let greet =  ()=> {
+    //     console.log('Good morning');
+    // }
+
+    let greet =  () => console.log('Good morning');
+    
+
+    // let sum2 = (a, b)=>{
+    //     return a+b;
+    // };
+
+    let sum2 = (a, b) => a+b; // if only one return is needed then no need to mention return keyword .
+    let half = a => a/2;  //if only one variable is needed then no need to mention parenthethis .
+
+    // function greet() {
+    //     console.log('Good morning');
+    // }
+
+    greet();
+    setTimeout(() => {
+        console.log("We are inside settimeout");
+    }, 3000);
+
+    let obj1={
+        greeting: "Good Morning",
+        names: ["Harry", "Rohan", "SkillF", "DjKhiladi"],
+        speak(){
+            this.names.forEach((student)=>{ 
+                console.log(this.greeting + " Kukdoo Koo " + student); // This variable is normally used to point the variable inside the function .But in the case of arrow functions, it points the variable outside the function. This is known as lexical this.
+            });
+        }
+    }
+    obj1.speak();
+    </script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat&display=swap"
+        rel="stylesheet">
+
+</head>
+<style>
+    /* css reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    .left {
+        /* border: red solid 2px; */
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+
+    }
+
+    .left img {
+        width: 73px;
+        height: 73px;
+
+    }
+
+    .left div {
+        text-align: center;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 24px;
+        font-weight: bolder;
+        color: white;
+
+    }
+
+    .mid {
+        /* border: blue solid 2px; */
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 17px;
+
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        padding: 20px 17px;
+        color:white;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: white;
+        text-decoration: underline;
+
+    }
+
+
+    .right {
+        /* border: green solid 2px; */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+
+    }
+
+    .btn {
+        cursor: pointer;
+        border: 2px soild grey;
+        border-radius: 10px;
+        padding: 7px 11px;
+        text-align: center;
+        margin: 4px 4px;
+        font-family: 'Montserrat', sans-serif;
+        outline: none;
+
+
+    }
+
+    .btn:hover {
+        background-color: rgb(32, 31, 31);
+        color: white;
+
+
+    }
+
+    .section {
+        color: white;
+        display: inline-block;
+        /* border: 2px solid black; */
+        height: 400px;
+        width: 400px;
+        position: relative;
+        top: 73px;
+        left: 174px;
+    }
+
+    .section p {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    .section input {
+        border: 2px solid white;
+        background-color: transparent;
+        color: white;
+        display: block;
+        font-size: 20px;
+        width: 350px;
+        margin: 3px auto;
+        padding: 2px 3px;
+        line-height: 2;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: bold;
+        outline: none;
+
+    }
+
+    .newbtn {
+        background-color: transparent;
+    }
+
+    .newbtn:hover{
+        background-color: white;
+        color: black;
+
+    }
+
+    .section input::placeholder {
+        color: white;
+        font-weight: lighter;
+    }
+</style>
+
+<body>
+    <header class="header">
+
+        <!-- left box for logo -->
+        <div class="left">
+            <!-- <img src="project 1\logo.png" alt=""> -->
+            <div>RS Fitness</div>
+
+        </div>
+
+        <!-- mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <section class="section">
+        <p>Contact US</p>
+        <form action="backend.php">
+            <input type="text" name="" id="" placeholder="Enter Your Name">
+            <input type="email" name="" id="" placeholder="Enter Your Email">
+            <input type="text" name="" id="" placeholder="Enter Your Address">
+            <input type="text" name="" id="" placeholder="Enter Your Number">
+            <input type="button" class="newbtn" value="Submit">
+
+        </form>
+    </section>
+</body>
+
+</html>

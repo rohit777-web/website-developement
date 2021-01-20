@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        This is a container
+    </div>
+</body>
+
+<!-- JavaScript -->
+<script>
+
+    //function function_name(function parameters){...}
+    function greet(name, greetText = "Greetings from JavaScript") { // greetText="Greeetings from JavaScript" should be used as default value.
+        let name1 = "Name1";
+        console.log(greetText + " " + name);
+        console.log(name + " is a good boy");
+    }
+
+    function sum(a, b, c) {
+        let d = a + b + c;
+        return d;
+        console.log("Function is returned");//This line will never execute (Unreachable code).
+    
+    }
+
+
+    let name = "ROHIT";
+    let name1 = "RAJAT";
+    let name2 = "ROHAN";
+    let name3 = "AKASH";
+    let greetText1 = "Good Morning";
+    greet(name, greetText1); // function call
+    greet(name1, greetText1);// function call
+    greet(name2, greetText1);// function call
+    greet(name3, greetText1);// function call
+    call = sum(1,2,3);// function call
+    console.log(call);
+    
+</script>
+
+</html>

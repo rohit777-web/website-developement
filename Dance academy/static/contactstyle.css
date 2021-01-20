@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+    
+}
+.container{
+    background: url('https://images.unsplash.com/photo-1600962794105-eb08ec05bc93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80') center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.myForm{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    width: 422px;
+    
+
+} 
+.myInput {
+    margin: 6px;
+    width: 100%;
+    padding: 14px;
+    outline: none;
+    border-radius: 29px;
+    border: 2px solid white;
+    text-align: center;
+    font-size: large;
+    
+}
+.myInput:hover {
+    color: white;
+    background-color: black;
+    
+    
+}
+
+.btn {
+    padding: 7px;
+    font-size: large;
+    margin-top: 18px;
+    border-radius: 9px;
+    outline: none;
+    border: 2px solid white;
+}
+.btn:hover {
+    color: white;
+    background-color: black;
+}

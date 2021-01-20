@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">simple si html</div>
+
+    <!-- javascript -->
+    <script>
+
+        // Primitive datatypes in javascript are numbers,string,boolean(true,false),undefined .
+        let myvar;  //undefined datatype - variable without a value .
+        let myVar = 34; // number datatype
+        let myVar2 = "string";// string datatype
+        let myVar3 = true;  // boolean datatype
+
+        let myVar4 = null; // null keyword has object datatype.Null refers to nothing object datatype is a reference datatype .
+      
+
+        let employee = { // object
+            name: "Harry",
+            salary: 10,
+            channel: "CodeWithHarry",
+            "channel 2": "ProgrammingWithHarry", // if yout want to write variable name alongwith spaces use double quotes to do the same.
+        }
+        console.log(employee);
+
+
+        let names = [1, 2, 4, "Harry", undefined]; // array
+        let names1 = new Array(41, 2, 4, "Harry", undefined);//another way of defining array is using new Array keyword.
+        let names2 = new Array(23);
+        console.log(names.length);
+        names = names.sort(); // it will sort your array in increasing order.
+        names.push("this is pushed"); // push is used for adding new elements to array. 
+        console.log(names);
+    </script>
+</body>
+</html>

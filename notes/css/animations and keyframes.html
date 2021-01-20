@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keyframes and Animations</title>
+</head>
+<style>
+    .container {
+        background-color: greenyellow;
+    }
+
+    /* for applying animation first of all we have to deifne a animation name after that animation duration and then animation count individually or by using animation short hand mentioned below. Now to provide animations we need to use keyframes properties */
+    .box {
+        background-color: green;
+        width: 250px;
+        height: 250px;
+        position: relative;
+
+        /* animation-name: rs1; */
+
+        animation-name: rs 2;  
+
+        animation-duration: 8s;  /* defines time interval of animation  */
+
+
+        animation-iteration-count: 1; /* defines how many times animations will repeat itself */
+
+
+        /* animation-fill-mode: alternate;  fill mode alternate means it will retain its orignal position where as fill mode forwards  persist the final animations position  */
+
+
+        /* animation-timing-function: ease-in-out; timing functions controls the animations behaviour whether fast or slow during inward and outward motions */
+
+
+        /* animation-delay: 3s; delays your animations for specified time interval */ 
+
+        /* animation-direction: reverse; reverses the animation direction */
+
+        /* These properties can be set using this shorthand */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode;    
+        for example: animation: rs  5s ease-in 1s 12 backwards; */
+
+    }
+
+    /* keyframe syntax is shown below */
+
+    @keyframes rs2 {
+
+        /* here x percentage of animations time is used */
+        0% {
+            top: 0px;
+            left: 0px;
+        }
+
+        25% {
+            top: 250px;
+            left: 0px;
+        }
+
+        75% {
+            top: 250px;
+            left: 250px;
+        }
+
+        100% {
+            top: 0px;
+            left: 250px;
+        }
+
+    }
+
+    @keyframes rs1 {
+        from {
+            width: 200px;
+        }
+
+        to {
+            width: 1400px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+
+</html>

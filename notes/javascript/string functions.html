@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript String Functions</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <script>
+        //string declaration as already discussed.
+        var str = "This is a string";
+        console.log(str);
+
+
+        // First occurence of a substring: string_name.indexof('part_of_string') .
+        var position;
+        position = str.indexOf('is'); // string_name.index means position starts from 0 .
+        console.log(position);
+
+
+        // Last occurence of a substring: string_name.lastindexof('part_of_string') .
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+
+        // We can extract Substring from a string: 1. string_name.slice(first_index,last_index) - here we will get a substring frpm index 1 to 7  .
+        var substr1 = str.slice(1, 7);
+        console.log(substr1);
+
+
+        //2. string_name.substring(first_index,last_index) - same like slice but only takes postive values. 
+        var substr2 = str.substring(1, 7);
+        console.log(substr2);
+
+
+        //3. string_name.substr(first_index,length) - here it will print string starting from given index to given length.
+        var substr3 = str.substr(1, 3);
+        console.log(substr3);
+
+
+        //String can be replaced by using replace : string_name.replace('unwanted string','new string') . 
+        var replaced = str.replace('string', 'Rohit');
+        console.log(replaced);
+
+
+        //string_name.toUpperCase()- converts string  to uppercase .
+        console.log(str.toUpperCase());
+
+
+        //string_name.toLowerCase()- converts string  to lowercase .
+        console.log(str.toLowerCase());
+
+
+        // printing string with  white spaces .
+        var strWithWhitespaces = "   this contains        whitespaces   ";
+        console.log(strWithWhitespaces)
+
+
+        // printing string wihtout white spaces: use string_name.trim() - it will trim the string white spaces from start and end.
+        var strWithoutWhitespaces = "   this doesn'tcontains        whitespaces   ";
+        console.log(strWithoutWhitespaces.trim());
+
+
+        //string_name.charAt(index) - prints specific character of the string of mentioned index . 
+        var char2 = str.charAt(2);
+        console.log(char2);
+        // or simply string_name[index]
+        console.log(str[3]);
+
+
+        //string_name.charCodeAt(index) - shows character codes of indexed character in string as mentioned by UTF . 
+        var char2 = str.charCodeAt(2); 
+        console.log(char2);
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    title Dance Website
+    style
+       include ../static/style.css
+     
+  body
+    nav#navbar
+      ul
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") Services]
+        li #[a(href="/") Contact Us]
+        li #[a(href="/") Class info]
+
+    section#introsection
+      div Welcome to Rohit's Dance Academy
+      div.small Eat Sleep Dance Repeat
+    hr
+    h2 Our mission
+    
+    section#missionsection
+      
+      div.card.first
+        h3 Dance Perfection
+      div.card.second
+        h3 Dance As you like
+      div.card.third
+        h3 Expert Teaching
+     
+    hr
+    h2 Our Sponsors
+    section#sponsorsection
+      div.logo.first
+        h3 Apple
+      div.logo.second
+        h3 Microsoft
+      div.logo.third
+        h3 Twitter
+
+    hr
+    footer#footer
+      h3  © 2020 Rohit Sharma | All Rights Reserved
+   
+
+    script
+       include ../static/index.js

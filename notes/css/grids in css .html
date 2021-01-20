@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid Tutorial</title>
+    <style>
+        .container {
+            display: grid;/* CSS grids are the display properties that allow us to transform any box into the grid.*/
+
+            /* Difference between css grid and flex box:  The main difference between flexbox and grid is, in flexbox, we can either move the box in horizontal or vertical directions but in the grid system, we can make the two-dimensional grid systems.*/
+
+            /* grid-template-columns: 300px 100px 100px; sets the size of the grid column.*/
+            /* grid-template-columns: 300px auto 100px; auto means rest of the width is assigned to the specified column.*/
+            /* grid-template-columns: 1fr 4fr 1fr; fr means fractional unit . 1fr is for 1 part of available space. */
+
+            grid-template-columns: repeat(3, auto); /* repeats g-t-c for 3 column and sets their width automatically(distributes available space equally among three columns) . */
+            grid-gap: 2rem;
+        }
+
+        .item {
+            /* height: 100px;
+             width: 100px; */
+            background-color: red;
+            border: 2px solid black;
+            padding: 15px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Tutorial</title>
+</head>
+
+<body>
+    <div class="container">This is my container</div>
+    <script>
+
+        // What is JSON?
+        // ANS: 1.JSON stands for JavaScript Object Notation
+        // 2.JSON is a lightweight data-interchange format
+        // 3.JSON is language independent
+        // 4.JSON is "self-describing" and easy to understand
+
+        // why there is need for JSON? 
+        // ANS:In some cases, we will have nested objects. Then, in that case, it is difficult to transport each property of the object and convert it into a string to parse them. In such cases, we take the help of JSON.
+
+        let jsonObj = {
+            name: "Harry",
+            channel: "CWH",
+            friend: "Rohan Das",
+            food: "Bhindi" //#bhindiLoverSquad
+        }
+
+        // Parsing means analyzing and converting a program into an internal format that a runtime environment can actually run
+       
+        //The JSON.stringify() method converts JavaScript objects into strings.When sending data to a web server the data has to be a string.
+        console.log(jsonObj);
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr);
+
+        //replacing item of converted string .
+        myJsonStr = myJsonStr.replace('Harry', 'Larry');
+        console.log(myJsonStr);
+
+        //The JSON.parse() method parses a string and returns a JavaScript object.The string has to be written in JSON format(mtlb phele JSON.stringyfy lagana padega).
+        newJsonObj = JSON.parse(myJsonStr);
+        console.log(newJsonObj);
+
+
+    </script>
+</body>
+
+</html>
